@@ -1,0 +1,25 @@
+<body class="body-auth">
+  <div class="login-container">
+    <h1>🚀 ログイン 🚀</h1>
+    <p>習慣管理をもっと楽しく！ログインして始めましょう！</p>
+
+    <%= form_with scope: :user, url: session_path(:user), local: true, class: "login-form" do |f| %>
+      <div class="form-group">
+        <%= f.label :email, "メールアドレス", class: "form-label" %>
+        <%= f.email_field :email, autofocus: true, class: "form-input" %>
+      </div>
+
+      <div class="form-group">
+        <%= f.label :password, "パスワード", class: "form-label" %>
+        <%= f.password_field :password, autocomplete: "current-password", class: "form-input" %>
+      </div>
+
+      <div class="form-actions">
+        <%= f.submit "ログイン", class: "btn btn-primary" %>
+      </div>
+    <% end %>
+
+    <p>まだアカウントがない方は？ <%= link_to "新規登録はこちら", new_user_registration_path, class: "link" %></p>
+  </div>
+</body>
+

@@ -1,0 +1,41 @@
+<% content_for :body_class, 'body-new' %>
+
+<header class="header neon-header">
+  <h1>🔥 目標をセットして、習慣を爆誕させよう！🔥</h1>
+  <p>💪 あなたの未来は、今日の積み重ねで決まる！</p>
+</header>
+
+<main class="new_main-content explosion-bg">
+  <section class="habit-form">
+    <% if @habit.errors.any? %>
+      <ul class="error-messages">
+        <% @habit.errors.full_messages.each do |message| %>
+          <li>🚨 <%= message %></li>
+        <% end %>
+      </ul>
+    <% end %>
+
+    <div class="form-container">
+      <%= form_with model: @habit, local: true do |f| %>
+        <div class="form-group">
+          <%= f.label :title, "🚀 習慣のタイトル" %>
+          <%= f.text_field :title, required: true, class: "form-control fire-border" %>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :description, "🔥 習慣の説明" %>
+          <%= f.text_area :description, class: "form-control fire-border" %>
+        </div>
+
+        <div class="form-actions">
+          <%= f.submit "💥 登録する！💥", class: "btn explosion-btn" %>
+          <%= link_to "🔙 キャンセル", habits_path, class: "btn btn-secondary neon-btn" %>
+        </div>
+      <% end %>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>&copy; 2024 HabiLog. 🌍🔥🔥🔥 ALL SYSTEMS GO. 🚀</p>
+</footer>
