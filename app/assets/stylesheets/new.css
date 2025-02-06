@@ -1,0 +1,130 @@
+/* ========================= */
+/* 🚀 落ち着いたネオンサイバー UI（テンション7） 🚀 */
+/* ========================= */
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: linear-gradient(135deg, #c3e88d, #a8ff78); /* 💚 落ち着いた黄緑グラデーション */
+}
+
+/* 💚 ヘッダー（ネオングリーン） */
+.header {
+  text-align: center;
+  padding: 2rem;
+  background: #4caf50;
+  color: #fff;
+  border-bottom: 5px solid #388e3c;
+}
+
+.header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* 📜 メインコンテンツ */
+.new_main-content {
+  padding: 2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 🔥 フォーム */
+.habit-form {
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.form-group label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #2e7d32;
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #4caf50;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.95);
+  color: #333;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* 🎯 ボタン（派手すぎず程よく光る） */
+.form-actions {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background: #4caf50;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.4);
+}
+
+.btn:hover {
+  background: #388e3c;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(76, 175, 80, 0.6);
+}
+
+.btn-secondary {
+  background: #2196f3;
+}
+
+.btn-secondary:hover {
+  background: #1976d2;
+}
+
+/* ❌ エラーメッセージ（目立ちすぎず適度に強調） */
+.error-messages {
+  color: #d32f2f;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+}
+
+.error-messages li {
+  font-size: 0.9rem;
+  background: #ffebee;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border-left: 5px solid #d32f2f;
+}
+
+/* 🌍 フッター */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #2e7d32;
+  color: #fff;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}

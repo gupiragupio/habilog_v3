@@ -1,0 +1,114 @@
+/* 全体のスタイル */
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  animation: background-shift 10s infinite alternate;
+}
+
+/* ヘッダー */
+.header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  font-size: 1.2rem;
+}
+
+/* メインコンテンツ */
+.index_main-content {
+  padding: 2rem;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.feature {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  flex: 1 1 calc(33% - 1rem);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.feature h2 {
+  font-size: 1.5rem;
+  color: #4caf50;
+}
+
+.feature p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Call-to-action ボタン */
+.cta {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background: #4caf50;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: #45a049;
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background: #2196f3;
+}
+
+.btn-secondary:hover {
+  background: #1976d2;
+}
+
+/* フッター */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+/* アニメーション */
+@keyframes background-shift {
+  from {
+    background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  }
+  to {
+    background: linear-gradient(135deg, #ebedee, #fdfbfb);
+  }
+}
