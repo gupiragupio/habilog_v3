@@ -1,0 +1,99 @@
+/* 新規登録ページ & ログインページ用スタイル */
+
+/* 新規登録・ログインページ専用 */
+.body-auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #f9f9f9, #e6f7ff);
+}
+
+/* トップページ専用 */
+.body-index {
+  background-color: #ffffff;
+  padding: 2rem;
+}
+
+/* コンテナのスタイル */
+.login-container {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* 見出し（h1）のスタイル */
+.login-container h1 {
+  font-size: 2rem;
+  color: #4caf50; /* グリーンでフレンドリーな印象 */
+  margin-bottom: 1rem;
+}
+
+/* 説明文のスタイル */
+.login-container p {
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+}
+
+/* フォーム全体のスタイル */
+.login-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+/* ボタンのスタイル */
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.2rem; /* ボタンの内側の余白を調整 */
+  font-size: 1rem;
+  color: #ffffff;
+  background: #4caf50;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  max-width: 200px; /* ボタンの最大幅 */
+  width: auto; /* ボタンの幅をコンテンツに合わせる */
+  text-align: center; /* テキストを中央揃え */
+}
+
+.btn:hover {
+  background: #a04577; /* ホバー時の色変更 */
+}
+
+/* ボタン間隔を調整するためのCTAセクション */
+.cta {
+  display: flex; /* ボタンを横並びにする */
+  justify-content: center; /* ボタンを中央揃え */
+  gap: 1rem; /* ボタン間の間隔 */
+  margin-top: 2rem; /* セクションの上部余白 */
+}
+
+/* リンクのスタイル */
+.link {
+  color: #2196f3;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

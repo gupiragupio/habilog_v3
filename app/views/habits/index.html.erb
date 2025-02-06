@@ -1,0 +1,43 @@
+<% content_for :body_class, 'body-index' %>
+
+<header class="header">
+  <h1>🚀 Welcome to HabiLog 🚀</h1>
+  <% if user_signed_in? %>
+    <!-- ログイン済みの場合 -->
+    <p>こんにちは、<%= current_user.nickname %>さん！</p>
+  <% else %>
+    <!-- 未ログインの場合 -->
+    <p>あなたの習慣を楽しく管理しよう！ </p>
+  <% end %>
+</header>
+
+<main class="index_main-content">
+  <section class="features">
+    <div class="feature">
+      <h2>🌟 毎日の習慣を記録</h2>
+      <p>シンプルで使いやすいインターフェースで、毎日の習慣をチェックしよう！</p>
+    </div>
+    <div class="feature">
+      <h2>📊 達成率をグラフで可視化</h2>
+      <p>達成状況を一目で確認できるグラフ機能でモチベーションアップ！</p>
+    </div>
+    <div class="feature">
+      <h2>🎯 楽しく続けられる仕組み</h2>
+      <p>ゲーミフィケーション要素を取り入れて、習慣化をもっと楽しく！</p>
+    </div>
+  </section>
+
+  <div class="cta">
+    <% if user_signed_in? %>
+      <%= link_to "習慣投稿", new_habit_path, class: "btn" %>
+     <%= button_to "ログアウト", destroy_user_session_path, method: :delete, class: "btn btn-secondary" %>
+    <% else %>
+      <%= link_to "新規登録はこちら", new_user_registration_path, class: "btn" %>
+      <%= link_to "ログイン", new_user_session_path, class: "btn btn-secondary" %>
+    <% end %>
+  </div>
+</main>
+
+<footer class="footer">
+  <p>&copy; 2024 HabiLog. All Rights Reserved.</p>
+</footer>
